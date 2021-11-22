@@ -246,7 +246,7 @@ describe('obtenerSaludo(name)', function() {
 });
 
 describe('obtenerAreaRectangulo(alto, ancho)', function() {
-  it('Deberia retornar el area correcta del rectangulo', function() {
+  xit('Deberia retornar el area correcta del rectangulo', function() {
     expect(obtenerAreaRectangulo(2, 2)).toBe(4);
     expect(obtenerAreaRectangulo(3, 6)).toBe(18);
     expect(obtenerAreaRectangulo(0, 2)).toBe(0);
@@ -254,7 +254,7 @@ describe('obtenerAreaRectangulo(alto, ancho)', function() {
 });
 
 describe('retornarPerimetro(lado)', function() {
-  it('Deberia retornar el perímetro correcto del cuadrado', function() {
+  xit('Deberia retornar el perímetro correcto del cuadrado', function() {
     expect(retornarPerimetro(2)).toBe(8);
     expect(retornarPerimetro(8)).toBe(32);
     expect(retornarPerimetro(0)).toBe(0);
@@ -263,7 +263,7 @@ describe('retornarPerimetro(lado)', function() {
 
 
 describe('areaDelTriangulo( base, altura)', function() {
-  it('Deberia retornar el area correcta del triángulo', function() {
+  xit('Deberia retornar el area correcta del triángulo', function() {
     expect(areaDelTriangulo(10, 5)).toBe(25);
     expect(areaDelTriangulo(20, 10)).toBe(100);
     expect(areaDelTriangulo(0, 10)).toBe(0);
@@ -271,7 +271,7 @@ describe('areaDelTriangulo( base, altura)', function() {
 });
 
 describe('deEuroAdolar(euro)', function() {
-  it('Deberia retornar el valor correcto de euro a dolar', function() {
+  xit('Deberia retornar el valor correcto de euro a dolar', function() {
     expect(deEuroAdolar(100)).toBe(120);
     expect(deEuroAdolar(200)).toBe(240);
     expect(deEuroAdolar(50)).toBe(60);
@@ -279,15 +279,15 @@ describe('deEuroAdolar(euro)', function() {
 });
 
 describe('esVocal(letra)', function() {
-  it('Deberia devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
+  xit('Deberia devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
     expect(esVocal("la")).toBe("Dato incorrecto");
     expect(esVocal("pero")).toBe("Dato incorrecto");
   });
-  it('Deberia devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function() {
+  xit('Deberia devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function() {
     expect(esVocal("l")).toBe("Dato incorrecto");
     expect(esVocal("p")).toBe("Dato incorrecto");
   });
-  it('Deberia devolver el string "Es vocal", si el valor ingresado lo es', function() {
+  xit('Deberia devolver el string "Es vocal", si el valor ingresado lo es', function() {
     expect(esVocal('a')).toBe('Es vocal');
     expect(esVocal('e')).toBe('Es vocal');
     expect(esVocal('i')).toBe('Es vocal');
